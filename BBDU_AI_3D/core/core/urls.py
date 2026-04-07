@@ -18,6 +18,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from core import Accounts
+
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path("Accounts/",Accounts.urls),
 ]
